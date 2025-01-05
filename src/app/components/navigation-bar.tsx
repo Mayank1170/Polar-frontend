@@ -27,7 +27,7 @@ export function NavigationBar() {
   const pathname = usePathname();
 
   return (
-    <header className="sticky top-0 z-50 w-full border-b border-border/40 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
+    <header className="sticky top-0 z-50 w-full px-16 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
       <nav className="container flex h-16 items-center">
         <Link href="/" className="mr-8">
           <div className="relative z-20 flex items-center text-lg font-bold">
@@ -39,7 +39,7 @@ export function NavigationBar() {
               strokeWidth="2"
               strokeLinecap="round"
               strokeLinejoin="round"
-              className="mr-2 h-6 w-6 bg-gradient-to-r from-indigo-500 via-purple-500 to-violet-500 [&>path]:stroke-background"
+              className="mr-2 h-6 w-6 [&>path]:stroke-background"
             >
               <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z" />
             </svg>
