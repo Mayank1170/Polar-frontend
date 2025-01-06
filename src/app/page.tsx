@@ -1,16 +1,16 @@
-"use client";
+"use client"
 
-import { motion } from "framer-motion";
-import { ArrowRight, Github, Globe, Rocket } from "lucide-react";
-import { Button } from "./components/ui/button";
-import { Card } from "./components/ui/card";
+import { motion } from "framer-motion"
+import { ArrowRight, Github, Globe, Rocket } from 'lucide-react'
+import { Button } from "./components/ui/button"
+import { Card } from "./components/ui/card"
 
 export default function Home() {
   return (
-    <div className="min-h-screen mx-auto ">
-      <section className="container relative">
+    <div className="min-h-screen flex flex-col items-center w-full"> 
+      <section className="container relative max-w-[1440px]">
         <div className="absolute inset-0 bg-grid-white/10 bg-grid-16 [mask-image:radial-gradient(white,transparent_85%)]" />
-        <div className="w-full relative pt-24 flex flex-col items-center text-center ml-20 gap-8">
+        <div className="w-full relative pt-24 flex flex-col items-center text-center gap-8">
           <motion.h1
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
@@ -105,7 +105,7 @@ export default function Home() {
         </div>
       </section>
     </div>
-  );
+  )
 }
 
 const features = [
@@ -125,11 +125,12 @@ const features = [
     title: "Full Transparency",
     description: "Track every transaction on the blockchain in real-time.",
   },
-];
+]
 
 const stats = [
   { id: 1, name: "Organizations", value: "500+" },
   { id: 2, name: "Developers", value: "2,000+" },
   { id: 3, name: "Issues Funded", value: "10k+" },
   { id: 4, name: "Total Funded", value: "$5M+" },
-];
+]
+

@@ -1,29 +1,27 @@
-import { Inter } from "next/font/google";
-import { ThemeProvider } from "./components/theme-provider";
-import { NavigationBar } from "./components/navigation-bar";
-import { cn } from "./lib/utils";
-import "./globals.css";
+import { Inter } from 'next/font/google'
+import { ThemeProvider } from "./components/theme-provider"
+import { NavigationBar } from "./components/navigation-bar"
+import { cn } from "./lib/utils"
+import "./globals.css"
 
-const inter = Inter({ subsets: ["latin"] });
+const inter = Inter({ subsets: ["latin"] })
 
 export const metadata = {
   title: "Polar - Decentralized Funding for Open Source",
   description: "Fund and support open source developers on Solana",
-};
+}
 
 export default function RootLayout({
   children,
 }: {
-  children: React.ReactNode;
+  children: React.ReactNode
 }) {
   return (
-    <html lang="en" suppressHydrationWarning>
-      <body
-        className={cn(
-          inter.className,
-          "min-h-screen bg-gradient-to-b from-background/90 to-background/95 antialiased"
-        )}
-      >
+    <html lang="en" suppressHydrationWarning className="dark">
+      <body className={cn(
+        inter.className,
+        "min-h-screen bg-gradient-to-b from-background/90 to-background/95 antialiased"
+      )}>
         <ThemeProvider
           attribute="class"
           defaultTheme="dark"
@@ -37,5 +35,6 @@ export default function RootLayout({
         </ThemeProvider>
       </body>
     </html>
-  );
+  )
 }
+

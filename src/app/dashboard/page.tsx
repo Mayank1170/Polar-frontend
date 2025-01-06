@@ -6,6 +6,8 @@ import { DashboardTabs } from "../components/dashboard/tabs"
 
 export default function DashboardPage() {
   return (
+    <div className="w-full flex justify-center">
+
     <DashboardShell>
       <DashboardHeader
         heading="Dashboard"
@@ -19,6 +21,7 @@ export default function DashboardPage() {
         <TransactionsList />
       </div>
     </DashboardShell>
+    </div>
   )
 }
 

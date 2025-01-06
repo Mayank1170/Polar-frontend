@@ -3,6 +3,8 @@ import { OrganizationStats } from "../components/organizations/organization-stat
 
 export default function OrganizationsPage() {
   return (
+    <div className="w-full flex justify-center">
+
     <div className="container py-6 md:py-10">
       <div className="flex flex-col gap-8">
         <div>
@@ -14,6 +16,7 @@ export default function OrganizationsPage() {
         <OrganizationStats />
         <OrganizationGrid />
       </div>
+    </div>
     </div>
   )
 }

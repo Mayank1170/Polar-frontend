@@ -3,6 +3,8 @@ import { DeveloperSearch } from "../components/developers/developer-search"
 
 export default function DevelopersPage() {
   return (
+    <div className="w-full flex justify-center">
+
     <div className="container py-6 md:py-10">
       <div className="flex flex-col gap-4">
         <div className="flex items-center justify-between">
@@ -17,6 +19,7 @@ export default function DevelopersPage() {
         <DeveloperGrid />
       </div>
     </div>
+  </div>
   )
 }
 
