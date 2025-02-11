@@ -85,7 +85,7 @@ export default function Home() {
         </h1>
         <p className="text-white/70 mb-8">
           Join hundreds of organizations funding open source development through
-          Polar.
+          Synth.
         </p>
         <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
           {stats.map((stat, i) => (

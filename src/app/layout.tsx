@@ -7,7 +7,7 @@ import "./globals.css"
 const inter = Inter({ subsets: ["latin"] })
 
 export const metadata = {
-  title: "Polar - Decentralized Funding for Open Source",
+  title: "Synth - Decentralized Funding for Open Source",
   description: "Fund and support open source developers on Solana",
 }
 

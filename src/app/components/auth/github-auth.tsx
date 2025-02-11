@@ -10,6 +10,7 @@ import {
   DropdownMenuSeparator,
   DropdownMenuTrigger,
 } from "../ui/dropdown-menu"
+import Image from "next/image"
 import { Github, LogOut, User } from 'lucide-react'
 
 export function GitHubAuth() {
@@ -20,7 +21,7 @@ export function GitHubAuth() {
       <DropdownMenu>
         <DropdownMenuTrigger asChild>
           <Button variant="ghost" className="relative h-8 w-8 rounded-full">
-            <img
+            <Image
               src={session.user?.image || ""}
               alt={session.user?.name || ""}
               className="h-8 w-8 rounded-full"
